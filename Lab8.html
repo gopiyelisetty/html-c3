@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab8</title>
+    <style>
+        body {
+            width: 80%;
+        }
+
+        .mytable {
+            width: 100%;
+            margin: 100px;
+        }
+
+        table,
+        th,
+        td {
+            font-size: 25px;
+            border: 2px solid red;
+            border-collapse: collapse;
+        }
+
+        tr:nth-child(odd) {
+            background-color: azure;
+        }
+
+        tr:nth-child(even) {
+            background-color: lavender;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="mytable">
+        <caption>
+            <h3>Student Information</h3>
+        </caption>
+        <thead>
+            <tr>
+                <th>sid</th>
+                <th>sname</th>
+                <th>email</th>
+                <th>phone</th>
+                <th>course1</th>
+                <th>course2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">101</td>
+                <td rowspan="2">sri</td>
+                <td>sri@jlc</td>
+                <td>12345</td>
+                <td>Angular</td>
+                <td>React</td>
+            </tr>
+            <tr>
+                <td colspan="2">gopi@jlc</td>
+                <td colspan="2">React</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>sd</td>
+                <td>sd@jlc</td>
+                <td>11111</td>
+                <td colspan="2">React</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>ds</td>
+                <td>ds@jlc</td>
+                <td>222222</td>
+                <td>Mongodb</td>
+                <td>Angular</td>
+            </tr>
+            <tr>
+                <td rowspan="2">104</td>
+                <td rowspan="2">Sri</td>
+                <td>Sri@jlc</td>
+                <td>456789</td>
+                <td rowspan="2">Angular</td>
+                <td rowspan="2">Node</td>
+            </tr>
+            <tr>
+                <td>vas@jlc</td>
+                <td>54321</td>
+            </tr>
+            <tr>
+                <td>106</td>
+                <td>ds</td>
+                <td>ds@jlc</td>
+                <td>2222</td>
+                <td>MongoDB</td>
+                <td>Angular</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

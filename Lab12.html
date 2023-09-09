@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(173, 230, 220);
+        }
+
+        .myregtable {
+            padding: 40px;
+            margin: 20px;
+            text-align: left;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            color: brown;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px 5px;
+            margin: 8px 0;
+        }
+
+        input[type=submit],
+        [type=reset],
+        button {
+            color: green;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 10px;
+            margin: 20px;
+        }
+
+        input[type=radio],
+        input[type=checkbox] {
+            color: purple;
+            border: 1px solid purple;
+            width: 1.5em;
+            height: 1.8em;
+        }
+
+        div {
+            background-color: beige;
+            width: 75%;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="register.jlc" method="post" p>
+            <table class="myregtable">
+                <caption>
+                    <h2>
+                        registration form
+                    </h2>
+                </caption>
+                <tr>
+                    <td>
+                        <label for="mysid">Batch id</label>
+                    </td>
+                    <td>
+                        <input type="text" id="mysid" value="B99-705" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fname">Full name</label>
+                    </td>
+                    <td> <input type="text" id="fname" required></td>
+
+                    </td>
+
+                    <!-- <td>
+                    <input type="text" id="mypswd" required>
+                    <br>
+                    <input type="submit" value="submit">
+                </td> -->
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email"> Email</label>
+                    </td>
+                    <td>
+                        <input type="text" id="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mypswd">Password</label>
+                    </td>
+                    <td>
+                        <input type="text" id="mypswd" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="courses">Courses</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="courses">Java <br>
+                        <input type="radio" id="courses">Python <br>
+                        <input type="radio" id="courses">Angular <br>
+                        <input type="radio" id="courses">MongoDB
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="courses">
+                            Courses
+                        </label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="courses">Java <br>
+                        <input type="checkbox" id="courses">Python <br>
+                        <input type="checkbox" id="courses">Angular <br>
+                        <input type="checkbox" id="courses">MongoDB
+                    </td>
+                <tr>
+                    <td>
+                        <label for="courses">Courses</label>
+                    </td>
+                    <td>
+                        <select name="listodcourses" id="courses">
+                            <option value="">------------select---------</option>
+                            <option value="java">java</option>
+                            <option value="python">Python</option>
+                            <option value="Angular">Angular</option>
+                            <option value="MongoDB">MongoDB</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="photo">Upload photo</label>
+                    </td>
+                    <td>
+                        <input type="file" name="pic" id="photo">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="myremarks">
+                            remarks
+                        </label>
+                    </td>
+                    <td>
+                        <textarea id="myremarks" cols="30" rows="10"></textarea> <br>
+                        <input type="submit" value="submit">
+                        <input type="reset" value="reset">
+                        <input type="hidden" value="D1X5w9">
+                    </td>
+                </tr>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

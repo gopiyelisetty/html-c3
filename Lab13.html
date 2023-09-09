@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            background-color: lightcyan;
+        }
+
+        .regformtable {
+            text-align: left;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        input {
+            color: red;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            border: 1px solid blue;
+            border-radius: 5px;
+            padding: 5px 5px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center" style="background-color: lightgray;">
+        <form action="hello.jsp" method="post" enctype="multipart/form-data">
+            <table class="regformtable">
+                <caption>
+                    <h2>HTML 5 new form elements</h2>
+                </caption>
+                <tr>
+                    <td>
+                        <label for="sid">SID</label>
+                    </td>
+                    <td>
+                        <input type="text" name="sid" id="sid" value="B26-101" placeholder="SID" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fname">Full Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="fname" id="fname" placeholder="FUllName" maxlength="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <input type="text" name="email" id="email" placeholder="EMAIL" maxlength="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Phone</label>
+                    </td>
+                    <td>
+                        <input type="text" id="phone" placeholder="PHONE" pattern="[0-9]{5}" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="jlc-courses">Courses</label>
+                    </td>
+                    <td>
+                        <input list="mycourses" type="text" id="jlc-courses" required>
+                        <datalist id="mycourses">
+                            <option value="java">Java</option>
+                            <option value="python">Python</option>
+                            <option value="Angular">Angular</option>
+                            <option value="MongoDB">MongoDB</option>
+                            <option value="JDBC">JDBC</option>
+                            <option value="pyramid">pyramid</option>
+                            <option value="Jsp">JSP</option>
+                            <option value="Mysql">MYSQL</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit now">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>

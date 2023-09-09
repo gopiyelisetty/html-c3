@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab11</title>
+    <style>
+        #hmenu {
+            border: 2px solid blue;
+            font-size: 20px;
+            color: red;
+            line-height: 1.8em;
+            width: 50%;
+            height: 50%;
+            padding-top: 15px;
+            padding-left: 25px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
+            float: left;
+        }
+
+
+        .bodycontent {
+            border: 1px solid red;
+            float: left;
+            width: 900px;
+            height: 450px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 10px;
+        }
+
+        #myframe {
+            width: 100%;
+            height: 100%;
+            border: 2px solid red;
+        }
+
+        span {
+            display: inline-block;
+            padding: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hmenu">
+        <span><a href="mycourses/angular.html" target="_blank">Angular course</a> </span>
+        <span><a href="mycourses/mongodb.html" target="_blank">MongoDB Course</a> </span>
+        <span> <a href="mycourses/nodejs.html" target="_blank">Nodejs course</a> </span>
+        <span> <a href="mycourses/reactjs.html" target="_blank">reactjs course</a> </span>
+
+    </div>
+    <div class="bodycontent">
+        <iframe id="myframe" name="myframe" src="mycourses/myallcourses.html" frameborder="0"></iframe>
+    </div>
+
+</body>
+
+</html>
